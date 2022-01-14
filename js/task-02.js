@@ -8,12 +8,14 @@ const ingredients = [
 ];
 
 const ingredientsEl = document.querySelector("ul#ingredients");
+let arrOfItems = []
 
 const innerEl = ingredients.map(elem => {
   const itemEl = document.createElement("li");
   itemEl.classList.add("item");
   itemEl.textContent = `${elem}`;
-  ingredientsEl.append(itemEl);
+  arrOfItems.push(itemEl)
 });
 
+ingredientsEl.append(...arrOfItems);
 console.log(ingredientsEl);

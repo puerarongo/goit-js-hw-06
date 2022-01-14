@@ -5,7 +5,7 @@ const stringLength = (event) => {
             inputEl.classList.remove("valid") || inputEl.classList.remove("invalid")
     }
     
-    if (event.currentTarget.value.length >= inputEl.dataset.length) {
+    if (event.currentTarget.value.length == inputEl.dataset.length) {
         inputEl.classList.add("valid")
     }
     else {
