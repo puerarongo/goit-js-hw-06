@@ -34,9 +34,7 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 };
 
-
 // todo Handler
 inputEl.addEventListener("input", inputFunc);
 createEl.addEventListener("click", (event) => createBoxes(event, amount));
 destroyEl.addEventListener("click", destroyBoxes);
-
